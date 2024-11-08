@@ -1,4 +1,3 @@
-from my_module import generate_recipe
 from transformers import T5ForConditionalGeneration, T5Tokenizer
 import streamlit as st
 
@@ -24,4 +23,3 @@ if st.button("Generate Recipe"):
     recipe = generate_recipe(ingredients_list)
     st.write("### Your Recipe:")
     st.write(recipe)
-
